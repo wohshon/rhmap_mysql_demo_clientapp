@@ -5,7 +5,8 @@ document.getElementById('say_hello').onclick = function () {
         path: 'hello',
         data: {
           hello: document.getElementById('hello_to').value
-        }
+        },
+        method: 'GET'
       },
       function (res) {
         document.getElementById('cloudResponse').innerHTML = "<p>" + res.msg + "</p>";
